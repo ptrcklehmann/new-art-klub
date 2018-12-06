@@ -1,0 +1,44 @@
+{
+  "name": "html5advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync": "browser-sync start --server --https --directory --files 'style.css, **/*.html, !node_modules/**/*.html'",
+    "sass": "node-sass --watch sass --output sass --source-map true --source-map-embed true",
+    "autoprefixer": "postcss sass/style.css -u autoprefixer -d . --map --watch",
+    "babel": "babel js/src --watch --out-dir js/dist --source-maps",
+    "build": "npm-run-all --parallel sass autoprefixer babel sync"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "IE 11",
+    "Safari 7"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "> 1%",
+              "IE 11",
+              "Safari 7"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}

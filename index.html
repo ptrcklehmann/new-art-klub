@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Markazi+Text|Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+
+  <title>NEW ART KLUB</title>
+</head>
+<body>
+<header>
+    <svg id="logo" data-name="Logo NAK" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 855.18 855.18" class="logo">
+      <defs>
+      <style>.square{fill:#19211f;}.logo{fill:#fff;}
+      </style>
+    </defs><title>logo</title>
+      <rect class="square" width="855.18" height="855.18"/>
+      <path class="logo" d="M577.54,173.07V534L431.13,346.62,558.56,173.06l-144.25.59-55.45,80.46-63.33-81H173.06V682.11H277.64V332.37L552,682.11H682.11v-509H577.54Z"/></svg>
+    <nav class="navbar">
+      <a class="aboutnav animated visible" href="#about">ABOUT</a>
+      <a class="eventsnav animated visible" href="#events">EVENTS</a>
+      <a class="gallerynav animated visible" href="#gallery">GALLERY</a>
+      <a class="contactnav animated visible" href="#contact">CONTACT</a>
+      </ul>
+    </nav>
+</header>
+<section class="about" id="about">
+<article class="animated visible">
+<h1>NEW ART KLUB</h1>
+<h1>an emerging collective,
+a platform for artistic exchange</h1>
+<p>new art klub is a collective project, supporting an eclectic mix of musicians, artists and writers. producing events at various locations in berlin, new art club showcases interdisciplinary art to inspires others and foster contemplation. new art klub also operates as an informal platform where everyone is invited to share and discuss their ideas on art and beyond.
+we are a non-governmental organization, instead we strive to unite and stimulate innovative artistry by creative means!</p>
+
+  <button class="button type1">
+    Read more
+  </button>
+</article>
+  <picture class="animated visible">
+    <img
+  src="img/nak-plattform.jpg"
+  alt="new art klub plattform">
+  </picture>
+
+</section>
+<section class="gallery" id="gallery">
+  <div class="thumbs animated visible">
+    <img
+    src="img/wonderwall-thumb.jpg"
+    alt="wonderwall" class="thumb">
+    <img
+    src="img/sink-thumb.jpg"
+    alt="sinked ship" class="thumb">
+    <img
+    src="img/trash-thumb.jpg"
+    alt="ocean trash" class="thumb">
+    <img
+    src="img/cables-thumb.jpg"
+    alt="amsterdam cables" class="thumb">
+    <img
+    src="img/deck-thumb.jpg"
+    alt="harbor deck" class="thumb">
+    <img
+    src="img/harbor-thumb.jpg"
+    alt="rotterdam harbor" class="thumb">
+  </div>
+  <div class="bigpicture animated visible">
+
+  </div>
+</section>
+
+<section class="events" id="events">
+<article>
+      <img src="img/fantasie.jpg" class="first animated visible">
+      <h3>Fantasie an die Macht</h3>
+      <p>
+        New art klub proudly announces its second
+        exhibition FANTASIE AN DIE MACHT.
+        <br><br>
+          FANTASIE AN DIE MACHT is an interdisciplinary art project,
+          taking place at Modular+, the open art space on the 8th.
+          floor of the artist residence Green House Berlin, inviting
+          artists to challenge, question and play with the notions of
+          Creativity and Power. In a world which is becoming increasingly
+          unstable, where the idea of truth has been turned on its head,
+          art as a form of expression has become more important than ever.
+        <br><br>
+
+          New art klub asks artists and spectators to join
+          the movement and engage in the discussion on
+          the power of the fantasy.</p>
+          <button class="button type1 red">
+            Read more
+          </button>
+</article>
+<article>
+      <img src="img/miguel.jpg" class="second animated visible">
+      <h3>Knowing so Wrong, Feeling so Right</h3>
+      <p>offering opportunities for attendants
+        to interact with the works and the immersive
+        atmosphere that has been created, 'knowing so wrong,
+        feeling so right' is less about the artist's
+        intention but more about allowing visitors to
+        contemplate on their own deeper realities.
+        <br><br>
+        'knowing so wrong, feeling so right' is also a
+        tribute to the tradition of "the art and
+        the party" thus it will be an evening of discussion and
+        collaboration as well as celebration and friendship.
+      </p>
+      <button class="button type1 red">
+        Read more
+      </button>
+    </article>
+    <article>
+      <img src="img/pascal.jpg" class="third animated visible">
+      <h3>Random Exibition</h3>
+      <p>Vivamus fermentum semper porta. Nunc diam velit,
+        adipiscing ut tristique vitae, sagittis vel odio.
+        Maecenas convallis ullamcorper ultricies. Curabitur ornare,
+        ligula semper consectetur sagittis, nisi diam iaculis
+        velit, id fringilla sem nunc vel mi. Nam dictum,
+        odio nec pretium volutpat, arcu ante placerat erat,
+        non tristique elit urna et turpis.</p>
+        <button class="button type1 red">
+          Read more
+        </button>
+    </article>
+
+</section>
+<section class="contact" id="contact">
+  <div id="map"></div>
+  <script>
+       function initMap() {
+         var myLatLng = {lat: 52.4408, lng: 13.4445};
+
+         // Create a map object and specify the DOM element
+         // for display.
+         var map = new google.maps.Map(document.getElementById('map'), {
+           center: myLatLng,
+           zoom: 12
+         });
+
+         // Create a marker and set its position.
+         var marker = new google.maps.Marker({
+           map: map,
+           position: myLatLng,
+           title: 'Hello World!'
+         });
+       }
+
+     </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVt9VVYYRfpomVgLcCdHhatYyqM_GSYXI&callback=initMap"
+         async defer></script>
+
+<div class="contact-info">
+  <article>
+    <h1>NEW ART KLUB Berlin</h1>
+  <ul>
+    <button class="button type1 touch">
+      GET IN TOUCH
+    </button>
+    <li>info@newartklub.com</li>
+    <li>Schönstedtstr 12, 12043</li>
+    <li>Neukölln, Berlin</li>
+  </ul></article>
+  <div class="contact-form">
+    <span class="close">×</span>
+    <br>
+    <input id="fullname" name="firstname" placeholder="FULL NAME" type="text">
+    <br>
+    <input id="email" name="email" placeholder="E-MAIL" type="text">
+    <br>
+    <textarea id="Message" name="message" placeholder="YOUR MESSAGE GOES HERE"></textarea>
+    <br>
+    <button class="button type1 sendmessage">
+      SEND
+    </button>
+  </div>
+</div>
+</section>
+<a class="scroll-to-top" href="#top">
+    <svg viewBox="24.574 21.622 41.955 41.955">
+        <path class="scroll-to-top__circle" d="M24.574 42.599c0-11.577 9.399-20.977 20.977-20.977 11.578 0 20.977 9.4 20.977 20.977 0 11.578-9.399 20.978-20.977 20.978-11.578 0-20.977-9.4-20.977-20.978z"
+            fill="#58585A" />
+        <path class="scroll-to-top__arrow" d="M33.764 47.494l11.787-11.687 11.687 11.687" fill="none" vector-effect="non-scaling-stroke"
+            stroke-width=".999" stroke="#FFF" stroke-miterlimit="10" />
+    </svg>
+</a>
+</body>
+<script type="text/javascript" src="js/dist/script.js">
+
+</script>
+
+</html>
